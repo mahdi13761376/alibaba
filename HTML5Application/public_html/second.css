@@ -1,0 +1,608 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 8, 2020, 9:36:54 AM
+    Author     : admin
+*/
+
+@font-face {
+    font-family: shabnam;
+    src: url(media/Shabnam-Light-FD-WOL.woff2);
+}
+
+*{
+    font-family: shabnam;
+}
+.navigation{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 40px;
+    height: 65px;
+    background-color: #fff;
+    position: relative;
+    border-bottom: 1px solid #e1e1e1;
+    z-index: 1000;
+    box-shadow: 0 3px 4px 0 rgba(0,0,0,.28);
+}
+.navbar {
+    display: inline-block
+
+}
+.logo{
+    height: 40px;
+    max-width: 100%;
+    display: inline-block;
+    width: 50px;
+    vertical-align: middle;
+}
+*, :after, :before {
+    box-sizing: border-box;
+}
+
+
+.site-header{
+    z-index: 501;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+.text-photo{
+    display: none;
+    height: 18px;
+}
+.text-div{
+    vertical-align: middle;
+    display: inline-block;
+}
+.header-container{
+    padding-top: 59px;
+}
+.container{
+    display: block;
+    box-sizing: border-box;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+}
+
+.container2{
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.text-photo2{
+    margin-top: -5px;
+    height: 35px;
+}
+
+.main-link{
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+.navigation-text{
+    margin-right: 10px;
+    color: black;
+
+}
+
+
+.navigation-list{
+    display: flex;
+    vertical-align: middle;
+    align-items: stretch;
+    align-self: stretch;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a, a:focus, a:hover {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.navigation-list>li>a:hover{
+    color: orange;
+}
+
+.navigation-list>li>a:hover .navigation-icon {
+    fill: orange;
+}
+
+.navigation-list>li>a:hover .navigation-text {
+    color: orange;
+}
+
+.navigation-item{
+    font-size: 13px;
+    display: flex;
+    text-align: center;
+    position: relative;
+}
+
+a:hover{
+    color: orange;
+}
+
+.navigation-button{
+    display: flex;
+    font-weight: 300;
+    background-color: transparent;
+    border: 0;
+    outline: none!important;
+    padding: 0 .5em;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    height: auto;
+
+}
+
+.mr-auto{
+    margin-right: auto;
+}
+
+.navigation-icon{
+    width: 20px;
+    height: 20px;
+    fill: #aaa;
+    transition: all .25s ease
+}
+
+
+.navigation-item .btn-order{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    color: #424242;
+    border: 1px solid #d2d2d2;
+    border-radius: 3px;
+    padding: 5px;
+    cursor: pointer;
+    margin-left: 10px
+}
+
+.navigation-button svg{
+    color: #aaa;
+
+}
+
+.maintenance .alert {
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    background-color: #ffaa0f;
+    color: #000;
+    display: block;
+    text-align-last: center;
+    font-size: .9rem;
+    text-align: center;
+    padding: 15px;
+    max-width: 100%;
+    max-width: 100%;
+
+}
+* {
+    box-sizing: border-box;
+}
+
+.alert{
+    padding: 15px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+}
+
+.svg-icon{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.close{
+    width: 15px;
+    margin-left: 5px;
+    margin-right : auto;
+}
+
+.maintenance a {
+    color: rgb(102, 66, 0);
+    font-weight: 500;
+    font-size: 0.9em;
+    display: inline-block;
+    margin: 0px 6px;
+    background: rgba(255, 255, 255, 0.38);
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem 0.35rem;
+}
+
+.site-footer{
+    padding-top: 2em;
+    background-color: rgb(225, 225, 225);
+}
+
+.footer-container{
+
+    width: 100vw;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: table;
+
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.footer-row{
+    margin-left: -15px;
+    margin-right: -15px;
+    display: table;
+    width:90vw;
+}
+
+.app-image{
+    box-shadow: 0 2px 3px 0 rgba(0,0,0,.2);
+    border-radius: 5px;
+    width: 80px;
+
+}
+
+.footer-col{
+    width: 20%;
+    float: right;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-title{
+    background-color: transparent;
+    margin: 1.5em 0px 0.5em;
+    padding: 0px;
+    font-size: 1.25em;
+    text-align: right;
+    display: block;
+    font-weight: 700;
+    color: rgb(66, 66, 66);
+}
+
+.footer-list-container{
+    width: 100%;
+    float: right;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.footer-list-1{
+    margin-bottom: 0px;
+    padding-right: 1em;
+    margin: 0px 0px 1.5em;
+    width: 100%;
+}
+
+.footer-item{
+    color: orange;
+    font-size: 0.9em;
+    font-weight: 300;
+    line-height: 2;
+}
+
+.footer-link{
+    color: rgb(100, 100, 100);
+    cursor: pointer;
+}
+
+.footer-col-app{
+    text-align: right;
+    margin-bottom: 2.5em;
+}
+
+.app-download-p{
+    font-size: 0.9em;
+    font-weight: 300;
+}
+
+.app-links{
+    align-items: start;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
+}
+
+.app-link{
+    margin: 15px 0px 0px;
+    display: inline-block;
+    vertical-align: top;
+    max-width: 125px;
+    width: 80px;
+}
+
+.footer-signs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 33.33333%;
+    float: right;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+}
+
+.footer-logo{
+    width: 210px;
+    max-width: none;
+    margin-top: 1.5em;
+}
+
+.footer-contact-info{
+    padding: 0px;
+    margin: 1em 0px 0px;
+    list-style: none;
+}
+.footer-contact-info > li {
+    margin-bottom: 1em;
+    font-size: 0.875em;
+    color: rgb(66, 66, 66);
+}
+.signs{
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0px;
+    margin: 05 em 0px 0px;
+}
+
+.sign-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 3px 0px;
+    flex-shrink: 0;
+    flex-basis: 87px;
+    min-width: 87px;
+    min-height: 87px;
+    float: right;
+    border-radius: 10px;
+    margin: 3px;
+}
+
+.sign-img{
+    width: 90%;
+    height: 90%;
+}
+
+.copyright{
+    text-align: right;
+    margin-top: 3em;
+    padding-top: 1.5em;
+    background-color: rgb(66, 66, 66);
+    color: rgb(245, 245, 245);
+}
+
+.copyright-container{
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: table;
+
+}
+
+.copyright-row{
+    margin-left: -15px;
+    margin-right: -15px;
+    display: flex;
+
+}
+
+.copyright-col{
+    width: 50%;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+    float: right;
+    vertical-align: middle;
+
+}
+
+.copyright-p{
+    font-size: 0.71em;
+    margin: 1.5em 0px 1em;
+}
+
+.socials{
+    text-align: left;
+    direction: ltr;
+    list-style: none;
+    padding: 0px;
+    padding-bottom: 20px;
+}
+
+.socials-item{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.ltr{
+    direction: ltr;
+}
+
+.social-link{
+    width: 36px;
+    height: 36px;  
+    display: block;
+    background-color: #646464;
+    border-radius: 50%;
+    color: #d2d2d2;
+    text-align: center;
+}
+
+.social-link:before{
+    line-height: 36px;
+    font-size: 1.25em;
+}
+
+.social-link:hover{
+    background-color: blue;
+}
+
+.profile-login .box {
+    padding: 30px;
+    max-width: 800px;
+    margin: 3em auto;
+}
+
+.box {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 -1px 1px 0 rgba(0,0,0,.05), 0 1px 5px 0 rgba(0,0,0,.15);
+}
+
+.login-container{
+    margin-left: -15px;
+    margin-right: -15px;
+    display: table;
+}
+
+.login-col{
+    width: 50%;
+    float: right;
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.login-type{
+    margin-bottom: 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+.login-item{
+    width: 148px;
+    display: inline-block;
+    padding: 10px 10px 0;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+
+.login-item:hover{
+    background-color: #f5faff;
+
+}
+
+.login-active{
+    border-color: #4a90e2;
+    color: #4a90e2;
+}
+
+.login-title{
+    font-weight: 400;
+}
+
+.form-login{
+
+    padding: 0;
+}
+
+.form-group{
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.form-control{
+    border-radius: 3px;
+    border-color: #d2d2d2;
+    box-shadow: none;
+    color: #646464;
+    display: block;
+    width: 100%;
+    height: 39px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.8;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.submit-buttun{
+
+    border-radius: 3px;
+    transition: all .25s;
+    display: block;
+    width: 100%;
+    color: #fff;
+    background-color: #4990e2;
+    border-color: #3383de;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.forget-container{
+    border-bottom: 1px solid #e1e1e1;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+
+}
+
+.signup-btn{
+    transition: all .25s;
+    display: block;
+    width: 100%;
+    background-color: #649b18;
+    border-color: #568515; 
+    color: #fff;
+    background-color: #649b18;
+    border-color: #568515;
+    margin-bottom: 0;
+    font-weight: 400;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.8;
+}
