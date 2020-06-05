@@ -1,0 +1,15 @@
+$(document).ready(function(){
+    $("#login-div").click(function(){
+        $("#login-div").addClass("login-active");
+        $("#sign-up-div").removeClass("login-active");
+        $("#login-form").css("display","block");
+        $("#sign-up-form").css("display","none");
+    });
+    $("#sign-up-div").click(function(){
+        console.log("clicked");
+        $("#login-div").removeClass("login-active");
+        $("#sign-up-div").addClass("login-active");
+        $("#login-form").css("display","none");
+        $("#sign-up-form").css("display","block");
+    });
+});
